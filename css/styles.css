@@ -149,8 +149,7 @@ pointer-events:none
 		margin: 5px 0 0 0;
 	}
 	.audio{
-		margin-right:auto;
-		margin-left:auto;
+		margin:45%;
 		margin-top: -200px;
 	}
 @media screen and (max-width: 460px) {
