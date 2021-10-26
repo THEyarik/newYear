@@ -122,6 +122,7 @@ pointer-events:none
 		max-height: 100vh;
 		margin: 15% auto;
 		text-align: center;
+		margin-top: -20px;
 	
 	}
 	.title {
