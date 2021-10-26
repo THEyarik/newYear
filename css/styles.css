@@ -56,11 +56,7 @@ body{
 		font-size: 50px;
 		margin: 5px 0 0 0;
 	}
-@media screen and (max-width: 1483px) {
-	body{
-		background-size:center;
-		max-height: 100%;
-	}
+
 
 
 }
