@@ -4,7 +4,7 @@ body{
 
 	background: url('../img/5833504.webp')no-repeat scroll;
 	background-size: cover;
-	
+	filter: drop-shadow(0 0 10px white);
 		
 	
 	}
@@ -35,7 +35,7 @@ body{
 	
 	}
 	.title {
-		filter: drop-shadow(0 0 10px white);
+		
 		text-align: center;
 		font-size: 60px;
 		margin-bottom: 50px;
