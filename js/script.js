@@ -302,7 +302,7 @@ document.addEventListener('keydown', function (j) {
 
 
 
-document.getElementById('playstop').onclick = function () {
+document.getElementById('containerr').onclick = function () {
 
 	var myaudio = document.getElementById("myaudio");
 
