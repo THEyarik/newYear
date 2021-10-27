@@ -149,7 +149,8 @@ margin: 0 auto;
 
 width: 150px;
 height: 120px;
-background: url('../icons/player_volume-removebg-preview.png') no-repeat;
+		background-color:white;
+/* background: url('../icons/player_volume-removebg-preview.png') no-repeat; */
 	}
 @media screen and (max-width: 500px) {
 .title{
