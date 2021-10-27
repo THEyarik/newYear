@@ -1,5 +1,9 @@
 'use strict';
 
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
 	const timer = new Date('Jan 1 2022 00:00:00 ');
@@ -30,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		let sec = Math.floor(leftUntil / 1000) % 60;
 
-		daysVal.textContent = days + 'д';
+		daysVal.textContent = days + 'дн';
 		hoursVal.textContent = hours + 'г';
 		minVal.textContent = min + 'хв';
 		secVal.textContent = sec + 'с';
@@ -42,6 +46,74 @@ document.addEventListener('DOMContentLoaded', () => {
 	setInterval(timeCount, 1000)
 
 })
+
+
+document.addEventListener('DOMContentLoaded', function () {
+	var script = document.createElement('script');
+	script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+	script.onload = function () {
+		particlesJS("snow", {
+			"particles": {
+				"number": {
+					"value": 200,
+					"density": {
+						"enable": true,
+						"value_area": 500
+					}
+				},
+				"color": {
+					"value": "#ffffff"
+				},
+				"opacity": {
+					"value": 0.7,
+					"random": false,
+					"anim": {
+						"enable": false
+					}
+				},
+				"size": {
+					"value": 4,
+					"random": true,
+					"anim": {
+						"enable": false
+					}
+				},
+				"line_linked": {
+					"enable": false
+				},
+				"move": {
+					"enable": true,
+					"speed": 5,
+					"direction": "bottom",
+					"random": true,
+					"straight": false,
+					"out_mode": "out",
+					"bounce": false,
+					"attract": {
+						"enable": true,
+						"rotateX": 100,
+						"rotateY": 100,
+					}
+				}
+			},
+			"interactivity": {
+				"events": {
+					"onhover": {
+						"enable": false
+					},
+					"onclick": {
+						"enable": false
+					},
+					"resize": false
+				}
+			},
+			"retina_detect": true
+		});
+	}
+	document.head.append(script);
+});
+
+
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -228,67 +300,28 @@ document.addEventListener('keydown', function (j) {
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-	var script = document.createElement('script');
-	script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
-	script.onload = function () {
-		particlesJS("snow", {
-			"particles": {
-				"number": {
-					"value": 200,
-					"density": {
-						"enable": true,
-						"value_area": 500
-					}
-				},
-				"color": {
-					"value": "#ffffff"
-				},
-				"opacity": {
-					"value": 0.7,
-					"random": false,
-					"anim": {
-						"enable": false
-					}
-				},
-				"size": {
-					"value": 4,
-					"random": true,
-					"anim": {
-						"enable": false
-					}
-				},
-				"line_linked": {
-					"enable": false
-				},
-				"move": {
-					"enable": true,
-					"speed": 5,
-					"direction": "bottom",
-					"random": true,
-					"straight": false,
-					"out_mode": "out",
-					"bounce": false,
-					"attract": {
-						"enable": true,
-						"rotateX": 100,
-						"rotateY": 100,
-					}
-				}
-			},
-			"interactivity": {
-				"events": {
-					"onhover": {
-						"enable": false
-					},
-					"onclick": {
-						"enable": false
-					},
-					"resize": false
-				}
-			},
-			"retina_detect": true
-		});
+
+
+document.getElementById('playstop').onclick = function () {
+
+	var myaudio = document.getElementById("myaudio");
+
+	if (myaudio.paused == true) {
+
+		document.getElementById("myaudio").play();
+
+
+
 	}
-	document.head.append(script);
-});
+
+	else if (myaudio.paused == false) {
+
+
+		document.getElementById("myaudio").pause();
+
+
+	}
+
+
+
+}
