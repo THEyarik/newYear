@@ -6,7 +6,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-	const timer = new Date('Dec 31 2021 00:00:00 ');
+	const timer = new Date('Jan 1 2021 00:00:00 ');
 
 	const daysVal = document.querySelector(' .time-count__days .time-count__val');
 	const hoursVal = document.querySelector(' .time-count__hours .time-count__val');
