@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const timeCount = () => {
 		let now = new Date();
 		let leftUntil = timer - now;
-		console.log(leftUntil);
+		
 
 		let days = Math.floor(leftUntil / 1000 / 60 / 60 / 24);
 
